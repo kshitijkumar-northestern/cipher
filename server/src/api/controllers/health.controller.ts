@@ -1,0 +1,11 @@
+import { Request, Response } from 'express';
+
+const startTime = Date.now();
+
+export function healthCheck(_req: Request, res: Response): void {
+  res.json({
+    status: 'ok',
+    timestamp: new Date().toISOString(),
+    uptime: Math.floor((Date.now() - startTime) / 1000),
+  });
+}
