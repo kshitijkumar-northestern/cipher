@@ -12,8 +12,10 @@ const CTAWaveBg = dynamic(
 export function CTAWave() {
   return (
     <section className="w-full relative overflow-hidden py-24 lg:py-32 bg-white dark:bg-black">
-      <div className="absolute inset-0 bg-[url('/cta-bg.png')] bg-cover bg-center bg-no-repeat opacity-100" />
-      <div className="absolute inset-0 backdrop-blur-[6px] lg:backdrop-blur-lg" />
+      <div className="absolute inset-0 bg-[url('/cta-bg.png')] bg-cover bg-center bg-no-repeat opacity-100">
+        <div className="absolute inset-0 bg-transparent dark:bg-black/40" />
+      </div>
+      <div className="absolute inset-0 backdrop-blur-md lg:backdrop-blur-xl" />
       <div className="relative z-10 container max-w-4xl mx-auto text-center text-white">
         <h2 className="text-3xl lg:text-5xl font-bold mb-4 text-white">Ready to get started?</h2>
         <p className="text-base lg:text-lg font-medium tracking-tight text-white/95 leading-normal mb-10 max-w-lg mx-auto">

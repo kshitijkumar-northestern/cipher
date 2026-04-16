@@ -11,10 +11,10 @@ const Spline = dynamic(() => import('@splinetool/react-spline/next'), {
 
 export function HeroSection() {
   return (
-    <section className="container pt-8 pb-16 lg:pt-24 lg:pb-20">
+    <section className="container pt-0 pb-16 lg:pt-8 lg:pb-20">
       <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-12">
         
-        <div className="w-full lg:w-1/2 order-1 lg:order-2 flex justify-center items-center -mt-4 lg:mt-0">
+        <div className="w-full lg:w-1/2 order-1 lg:order-2 flex justify-center items-center -mt-12 lg:-mt-20">
           
           <div className="block lg:hidden w-full aspect-square max-w-[500px] relative">
             <Spline scene="https://prod.spline.design/QOei3V6-5mRMLYvw/scene.splinecode" />
