@@ -25,7 +25,7 @@ export function HeroSection() {
           </div>
         </div>
 
-        <div className="w-full lg:w-1/2 order-2 lg:order-1 text-center lg:text-left">
+        <div className="w-full lg:w-1/2 order-2 lg:order-1 text-center lg:text-left -mt-8 lg:-mt-12">
           <p className="text-xs font-semibold uppercase tracking-widest text-[#06B6D4] mb-5 animate-fade-up" style={{ opacity: 0 }}>
             AI-Powered Cloud Operations
           </p>
