@@ -11,7 +11,7 @@ const Spline = dynamic(() => import('@splinetool/react-spline/next'), {
 
 export function HeroSection() {
   return (
-    <section className="container pt-16 pb-16 lg:pt-36 lg:pb-20">
+    <section className="container pt-8 pb-16 lg:pt-24 lg:pb-20">
       <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-12">
         
         <div className="w-full lg:w-1/2 order-1 lg:order-2 flex justify-center items-center -mt-4 lg:mt-0">
