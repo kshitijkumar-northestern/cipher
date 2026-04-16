@@ -11,7 +11,13 @@ export function SiteFooter() {
             <p className="mt-3 text-[13px] text-neutral-600 dark:text-neutral-300 max-w-xs leading-relaxed">
               AI & Cloud Operations Partner for Modern Enterprises.
             </p>
-            <div className="mt-4 flex gap-2">{LOCATIONS.map((l) => <span key={l.country} title={l.country}>{l.flag}</span>)}</div>
+            <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2">
+              {LOCATIONS.map((l) => (
+                <span key={l.country} className="text-xs text-neutral-500 dark:text-neutral-400">
+                  {l.country}
+                </span>
+              ))}
+            </div>
           </div>
           {([
             ['Services', FOOTER_NAV.services],

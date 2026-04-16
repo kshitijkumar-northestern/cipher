@@ -49,7 +49,7 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
             { title: 'Our Mission', sub: ABOUT_CONTENT.mission, body: 'We take ownership of your operations so your team can focus on strategy, growth, and innovation.' },
             { title: 'Our Team', sub: ABOUT_CONTENT.team, body: 'Our engineers, architects, and operations specialists work across time zones to deliver round-the-clock excellence.' },
@@ -101,8 +101,7 @@ export default function AboutPage() {
         </div>
         <div className="flex items-center justify-center gap-6 flex-wrap">
           {LOCATIONS.map((l) => (
-            <div key={l.country} className="flex items-center gap-2 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-black px-5 py-3">
-              <span className="text-2xl">{l.flag}</span>
+            <div key={l.country} className="flex items-center justify-center rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-black px-5 py-3">
               <span className="text-sm font-medium">{l.country}</span>
             </div>
           ))}

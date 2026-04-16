@@ -43,7 +43,7 @@ export default function CareersPage() {
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">A workplace built for builders</h2>
           <p className="text-sm text-neutral-700 dark:text-neutral-300 leading-relaxed">We invest in our people so they can do the best work of their careers.</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {whyJoin.map((item) => (
             <div key={item.title} className="gradient-border">
               <div className="bg-white dark:bg-black p-6 h-full">
@@ -64,7 +64,7 @@ export default function CareersPage() {
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">Current openings</h2>
             <p className="text-sm text-neutral-700 dark:text-neutral-300 leading-relaxed">Explore roles across engineering, operations, and product.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {jobs.map((job) => (
               <div key={job.title} className="gradient-border">
                 <div className="bg-white dark:bg-black p-6 h-full">

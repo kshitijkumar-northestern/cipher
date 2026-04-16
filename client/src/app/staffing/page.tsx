@@ -44,7 +44,7 @@ export default function StaffingPage() {
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">Choose your model</h2>
           <p className="text-sm text-neutral-700 dark:text-neutral-300 leading-relaxed">Three flexible engagement models to match your needs and budget.</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {models.map((m) => (
             <div key={m.title} className={`gradient-border ${m.popular ? 'ring-2 ring-[#06B6D4]/30' : ''}`}>
               <div className="bg-white dark:bg-black p-6 h-full relative">
@@ -101,7 +101,7 @@ export default function StaffingPage() {
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">How it works</h2>
           <p className="text-sm text-neutral-700 dark:text-neutral-300 leading-relaxed">From discovery to delivery in four simple steps.</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
           {steps.map((s) => (
             <div key={s.n} className="gradient-border">
               <div className="bg-white dark:bg-black p-6 h-full">

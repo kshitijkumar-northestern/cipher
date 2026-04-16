@@ -27,6 +27,7 @@ const VERTEX = `
 `;
 
 const FRAGMENT = `
+  uniform float uTime;
   varying float vHeight;
   varying vec2 vUv;
 
@@ -36,9 +37,9 @@ const FRAGMENT = `
     vec3 white     = vec3(1.0, 1.0, 1.0);
     vec3 darkBlue  = vec3(0.0, 0.1, 0.4);  
     vec3 blue      = vec3(0.0, 0.27, 1.0); 
-    vec3 midCyan   = vec3(0.0, 0.75, 1.0); 
-    vec3 cyan      = vec3(0.0, 0.9, 1.0);  
-    vec3 lightCyan = vec3(0.8, 1.0, 1.0);  
+    vec3 midCyan   = vec3(0.0, 0.5, 0.9); 
+    vec3 cyan      = vec3(0.0, 0.7, 0.9);  
+    vec3 lightCyan = vec3(0.0, 0.8, 1.0);  
 
     float px = vUv.x * 1.3 + h * 0.3;
 

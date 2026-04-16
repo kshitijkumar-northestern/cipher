@@ -63,8 +63,7 @@ export default function ContactPage() {
               <h3 className="font-semibold mb-4">Our Locations</h3>
               <div className="space-y-2.5">
                 {LOCATIONS.map((loc) => (
-                  <div key={loc.country} className="flex items-center gap-2 text-sm">
-                    <span className="text-base">{loc.flag}</span>
+                  <div key={loc.country} className="flex items-center text-sm">
                     <span className="font-medium">{loc.country}</span>
                   </div>
                 ))}

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { ArrowRight, Brain, Cloud, Layers, Shield, Zap, Globe, BarChart3, RefreshCw } from 'lucide-react';
-import { HeroSection } from '@/components/hero-section';
-import { CTAWave } from '@/components/cta-wave';
+import { HeroSection } from '@/components/sections/hero-section';
+import { CTAWave } from '@/components/sections/cta-wave';
 import { CORE_PILLARS, WHY_CHOOSE_US, DIFFERENTIATORS } from '@cipher/shared';
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
@@ -45,7 +45,7 @@ export default function HomePage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {CORE_PILLARS.map((p) => {
             const Icon = iconMap[p.icon];
             return (

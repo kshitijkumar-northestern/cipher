@@ -34,7 +34,7 @@ export default function AIAutomationPage() {
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">AI-Powered Operations</h2>
           <p className="text-sm text-neutral-700 dark:text-neutral-300 leading-relaxed">Intelligent automation across every layer of your operations.</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {AI_AUTOMATION_CONTENT.aiPoweredOps.map((item) => (
             <div key={item.title} className="gradient-border">
               <div className="bg-white dark:bg-black p-6 h-full">
@@ -54,7 +54,7 @@ export default function AIAutomationPage() {
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">Systems that never stop improving</h2>
             <p className="text-sm text-neutral-700 dark:text-neutral-300 leading-relaxed">AI-driven learning, cost optimization, and self-healing built into every layer.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {AI_AUTOMATION_CONTENT.continuousImprovement.map((item) => (
               <div key={item.title} className="gradient-border">
                 <div className="bg-white dark:bg-black p-6 h-full">
@@ -92,7 +92,7 @@ export default function AIAutomationPage() {
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">Client outcomes</h2>
             <p className="text-sm text-neutral-700 dark:text-neutral-300 leading-relaxed">Measurable results delivered to every client.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {AI_AUTOMATION_CONTENT.clientOutcomes.map((outcome) => (
               <div key={outcome} className="rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-black p-5 flex items-center gap-3">
                 <Check className="h-4 w-4 text-[#06B6D4] shrink-0" />

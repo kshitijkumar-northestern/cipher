@@ -7,8 +7,13 @@ const config: Config = {
   theme: {
     container: {
       center: true,
-      padding: '2rem',
-      screens: { '2xl': '1280px' },
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem',
+        lg: '4rem',
+        xl: '5rem',
+        '2xl': '6rem',
+      },
     },
     extend: {
       fontFamily: {
@@ -39,7 +44,7 @@ const config: Config = {
         'fade-up-2': 'fade-up 0.5s ease-out 0.2s forwards',
         'fade-up-3': 'fade-up 0.5s ease-out 0.3s forwards',
         'fade-in': 'fade-in 0.4s ease-out forwards',
-        'gradient-x': 'gradient-x 15s ease infinite',
+        'gradient-x': 'gradient-x 30s ease infinite',
       },
     },
   },

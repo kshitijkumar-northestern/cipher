@@ -3,7 +3,7 @@
 import dynamic from 'next/dynamic';
 
 const Globe = dynamic(
-  () => import('@/components/globe').then((m) => ({ default: m.Globe })),
+  () => import('@/components/animations/globe').then((m) => ({ default: m.Globe })),
   { ssr: false, loading: () => <div className="w-full h-[500px] lg:h-[600px]" /> }
 );
 
@@ -32,8 +32,7 @@ export function GlobalPresenceSection() {
 
         <div className="flex items-center justify-center gap-8 lg:gap-14 mt-4">
           {locations.map((l) => (
-            <div key={l.country} className="flex items-center gap-2">
-              <span className="text-2xl">{l.flag}</span>
+            <div key={l.country} className="flex items-center">
               <span className="text-sm font-medium text-neutral-600 dark:text-neutral-300">{l.country}</span>
             </div>
           ))}

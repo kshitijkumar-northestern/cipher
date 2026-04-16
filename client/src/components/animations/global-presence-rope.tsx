@@ -3,7 +3,7 @@
 import dynamic from 'next/dynamic';
 
 const PresenceWave = dynamic(
-  () => import('@/components/presence-wave').then((m) => ({ default: m.PresenceWave })),
+  () => import('@/components/animations/presence-wave').then((m) => ({ default: m.PresenceWave })),
   { ssr: false }
 );
 

@@ -50,8 +50,8 @@ export default function InfrastructurePage() {
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">Data Operations</h2>
             <p className="text-sm text-neutral-700 dark:text-neutral-300 leading-relaxed">End-to-end data management from databases to data lakes.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {INFRASTRUCTURE_CONTENT.dataOps.map((item) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {INFRASTRUCTURE_CONTENT.dataOps.map((item) => (
               <div key={item.title} className="gradient-border">
                 <div className="bg-white dark:bg-black p-6 h-full">
                   <h3 className="font-semibold mb-2">{item.title}</h3>
@@ -70,7 +70,7 @@ export default function InfrastructurePage() {
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">DevOps Operations</h2>
           <p className="text-sm text-neutral-700 dark:text-neutral-300 leading-relaxed">CI/CD, release automation, IaC, and full-stack observability.</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {INFRASTRUCTURE_CONTENT.devOps.map((item) => (
             <div key={item.title} className="gradient-border">
               <div className="bg-white dark:bg-black p-6 h-full">

@@ -11,10 +11,10 @@ const Spline = dynamic(() => import('@splinetool/react-spline/next'), {
 
 export function HeroSection() {
   return (
-    <section className="container pt-28 pb-16 lg:pt-36 lg:pb-20">
-      <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+    <section className="container pt-16 pb-16 lg:pt-36 lg:pb-20">
+      <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-12">
         
-        <div className="w-full lg:w-1/2 order-1 lg:order-2 flex justify-center items-center">
+        <div className="w-full lg:w-1/2 order-1 lg:order-2 flex justify-center items-center -mt-4 lg:mt-0">
           
           <div className="block lg:hidden w-full aspect-square max-w-[500px] relative">
             <Spline scene="https://prod.spline.design/QOei3V6-5mRMLYvw/scene.splinecode" />
@@ -43,7 +43,7 @@ export function HeroSection() {
             with built-in auto-healing and cost optimization.
           </p>
 
-          <div className="flex items-center justify-center lg:justify-start gap-3 animate-fade-up-2" style={{ opacity: 0 }}>
+          <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 animate-fade-up-2" style={{ opacity: 0 }}>
             <Link href="/contact" className="inline-flex items-center h-10 sm:h-12 px-6 sm:px-8 rounded-full bg-neutral-900 dark:bg-white text-white dark:text-black text-sm sm:text-base font-medium hover:opacity-80 active:scale-[0.97] transition-all">
               Get Started <ArrowRight className="ml-2 h-4 w-4" />
             </Link>

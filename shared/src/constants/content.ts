@@ -6,10 +6,10 @@ export const COMPANY_EMAIL = 'info@yourcompany.com';
 export const COMPANY_PHONE = '+1 (xxx) xxx-xxxx';
 
 export const LOCATIONS: Location[] = [
-  { country: 'United States', flag: '🇺🇸' },
-  { country: 'Canada', flag: '🇨🇦' },
-  { country: 'India', flag: '🇮🇳' },
-  { country: 'Australia', flag: '🇦🇺' },
+  { country: 'United States', flag: '' },
+  { country: 'Canada', flag: '' },
+  { country: 'India', flag: '' },
+  { country: 'Australia', flag: '' },
 ];
 
 export const HERO_CONTENT = {

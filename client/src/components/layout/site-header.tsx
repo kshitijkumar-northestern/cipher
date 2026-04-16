@@ -4,8 +4,8 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X, ChevronDown, Brain, Cloud, Layers } from 'lucide-react';
-import { ThemeToggle } from '@/components/theme-toggle';
-import { HeaderRope } from '@/components/header-rope';
+import { ThemeToggle } from '@/components/ui/theme-toggle';
+import { HeaderRope } from '@/components/animations/header-rope';
 
 const services = [
   { label: 'AI Automation', href: '/ai-automation', icon: Brain },
@@ -32,7 +32,7 @@ export function SiteHeader() {
       <div className="max-w-[1440px] mx-auto px-6 lg:px-10 flex h-16 items-center">
         <Link href="/" className="mr-10 text-xl font-bold">Cipher</Link>
 
-        <nav className="hidden md:flex items-center gap-8 flex-1">
+        <nav className="hidden lg:flex items-center gap-8 flex-1">
           <div className="relative" onMouseEnter={() => setDrop(true)} onMouseLeave={() => setDrop(false)}>
             <button className="flex items-center h-16 gap-1.5 text-xs font-medium text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors">
               Services <ChevronDown className={`h-3.5 w-3.5 transition-transform ${drop ? 'rotate-180' : ''}`} />
@@ -58,7 +58,7 @@ export function SiteHeader() {
         <div className="flex items-center gap-3 ml-auto">
           <ThemeToggle />
           <button 
-            className="md:hidden p-1.5 relative w-8 h-8 flex items-center justify-center" 
+            className="lg:hidden p-1.5 relative w-8 h-8 flex items-center justify-center" 
             onClick={() => setOpen(!open)}
             aria-label="Toggle menu"
           >
@@ -69,7 +69,7 @@ export function SiteHeader() {
       </div>
 
       <div 
-        className={`md:hidden border-t border-neutral-200 dark:border-neutral-800 bg-white/95 dark:bg-black/95 backdrop-blur-2xl p-5 overflow-hidden transition-all duration-300 ease-in-out origin-top ${
+        className={`lg:hidden border-t border-neutral-200 dark:border-neutral-800 bg-white/95 dark:bg-black/95 backdrop-blur-2xl p-5 overflow-hidden transition-all duration-300 ease-in-out origin-top ${
           open ? 'max-h-[500px] opacity-100 scale-y-100' : 'max-h-0 opacity-0 scale-y-0'
         }`}
       >
